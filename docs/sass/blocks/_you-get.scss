@@ -1,0 +1,49 @@
+.you-get {
+    text-align: center;
+    background-image: url(./../img/course/gold_noise.jpg);
+}
+
+.you-get__wrapper{
+    padding: 100px 0;
+    border-top: 1px solid #d4af371c;
+    border-bottom: 1px solid #d4af371c;
+}
+.you-get__title {
+    color: #D4AF37;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.you-get__links {
+    font-family: 'Cormorant Unicase', sans-serif;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: start;
+    margin-bottom: 60px;
+
+}
+
+.you-get__link {
+    position: relative;
+    color: #D4AF37;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 60px;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        background-image: url(./../img/you_get/check.svg);
+        background-position: center;
+        background-size: cover;
+    }
+}

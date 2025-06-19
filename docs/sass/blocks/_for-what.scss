@@ -1,0 +1,37 @@
+.for-what {
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+.for-what__links {
+
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0 15px;
+}
+
+.for-what__link {
+padding-left: 20px;
+    position: relative;
+    color: #474747b3;
+    font-size: 24px;
+    text-align: start;
+
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 3px;
+        width: 3px;
+        border-radius: 50%;
+        background-color: rgb(71 71 71 / 73%);
+    }
+
+}
