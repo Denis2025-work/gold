@@ -561,7 +561,7 @@ input[name=panel]:checked + .collapsible {
   width: -moz-fit-content;
   width: fit-content;
   background: linear-gradient(90deg, rgba(212, 175, 55, 0) 52.4%, rgba(110, 91, 29, 0) 100%);
-  outline: 2px solid #D4AF37;
+  outline: 1px solid #D4AF37;
   color: #c9a52f;
   background: transparent;
   margin: 0 auto;
