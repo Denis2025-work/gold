@@ -1,0 +1,73 @@
+.header {
+    position: relative;
+    padding-top: 180px;
+    background-image: url(./../img/header/bg_gold.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        backdrop-filter: blur(10px);
+    }
+}
+
+.header__row {
+    position: relative;
+    display: flex;
+
+    img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: unset;
+        /*обнуляем из reset - max-width 100%*/
+        height: 650px;
+    }
+}
+
+.header__content {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 70%;
+    width: 100%;
+
+    .btn {
+        margin: 0 auto;
+    }
+}
+
+.header__title {
+    padding: 0;
+    font-family: 'Cormorant Unicase', sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.7;
+    background: linear-gradient(90deg, #d4af37 44.33%, #6e5b1d 93.04%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.25));
+}
+
+.header__title-small {
+    font-size: 105px;
+}
+
+.header__text {
+    font-size: 24px;
+    color: #474747b3;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 590px;
+    font-weight: 400;
+}

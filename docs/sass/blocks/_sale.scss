@@ -1,0 +1,94 @@
+.sale {
+    text-align: center;
+    border-top: 1px solid rgb(128 128 128 / 10%);
+    border-bottom: 1px solid rgb(128 128 128 / 10%);
+
+    .program__subtitle {
+        margin-bottom: 60px;
+    }
+
+    .sale__title--gold {
+        background: linear-gradient(90deg, #d4af37 44.33%, #6e5b1d 93.04%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        .sale__title--grey {
+            position: relative;
+            font-size: 50px;
+            background: linear-gradient(90deg, #9e9e9e 44.33%, #9e9e9ecc 93.04%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 56%;
+                left: 0;
+                //transform: rotate(346deg);
+                height: 1px;
+                width: 100%;
+                background-color: red;
+            }
+
+            @media (max-width: 1210px) {
+                font-size: 50px;
+                margin-bottom: 40px;
+            }
+
+            @media (max-width: 1023px) {
+                font-size: 35px;
+            }
+        }
+    }
+
+}
+
+.sale__wrapper {
+    backdrop-filter: blur(10px);
+}
+
+.sale__wrapper-top {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .sale__title {
+        margin-bottom: 20px;
+    }
+
+    .sale__title--gold {
+        margin-bottom: 30px;
+        line-height: 1;
+    }
+}
+
+.sale__wrapper-bottom {
+    background-color: #d4af3717;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+
+    .sale__title {
+        background: linear-gradient(90deg, #d4af37 44.33%, #6e5b1d 93.04%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btn {
+        position: relative;
+        width: fit-content;
+        background: linear-gradient(90deg, rgba(212, 175, 55, 0) 52.4%, rgba(110, 91, 29, 0) 100%);
+        outline: 1px solid #D4AF37;
+        color: #c9a52f;
+        background: transparent;
+        margin: 0 auto;
+
+        &:hover {
+            background: linear-gradient(90deg, rgba(212, 175, 55, 0.98) 52.4%, rgba(110, 91, 29, 0.98) 100%);
+            outline: none;
+            color: white;
+        }
+    }
+}

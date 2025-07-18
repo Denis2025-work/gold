@@ -1,0 +1,181 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+input[type='file'] {
+    max-width: 100%;
+}
+
+/*base*/
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.nne {
+    display: none;
+}
+
+.title-2 {
+    font-family: 'Cormorant Unicase', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #2c2c2c;
+    margin-bottom: 60px;
+
+    @media (max-width: 1210px) {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 35px;
+    }
+}
+
+.title-3 {
+    /*subtitle*/
+    font-family: 'Cormorant Unicase', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2c2c2c;
+}
+
+.container {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    color: white;
+    padding: 18px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 35px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.98) 52.4%, rgba(110, 91, 29, 0.98) 100%);
+    transition: all 0.3s ease-in;
+    &:hover {
+        background: linear-gradient(90deg, rgb(255, 255, 255) 52.4%, rgb(255, 255, 255) 100%);
+        outline: 1px solid rgb(212, 175, 56);
+        color: rgb(212, 175, 56);
+    }
+}

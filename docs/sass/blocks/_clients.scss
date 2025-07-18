@@ -1,0 +1,122 @@
+.clients {
+    padding: 100px 0;
+}
+
+.clients__title {
+    text-align: center;
+}
+
+.clients__slider {
+    position: relative;
+    padding: 40px 15px 0;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.slider-item {
+    min-height: 190px;
+    padding: 30px 15px;
+    border: 1px solid #c9a52f;
+    border-radius: 10px;
+    color: #000000a8;
+}
+
+.slider__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #c9a52f;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .3s ease-in;
+    path {
+            stroke: #c9a52f;
+            transition: all .3s ease-in;
+        }
+
+    &:hover {
+        background-color: #c9a52f;
+        transition: background-color .2s ease-in;
+        path {
+            stroke: white;
+        }
+    }
+
+    &--left {
+        top: -20px;
+        right: 25px;
+        transform: translateX(-100%);
+    }
+
+    &--right {
+        top: -20px;
+        right: 15px;
+    }
+}
+
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+
+$color-base: #241631;
+$color-white: white;
+$color-gray: #c9a52f;
+
+//nav
+
+$nav-color: $color-white;
+$nav-color-hover: $color-white;
+$nav-font-size: 14px;
+$nav-rounded: 3px;
+$nav-margin: 5px;
+$nav-padding: 4px 7px;
+$nav-background: $color-gray;
+$nav-background-hover: $color-base;
+$nav-disabled-opacity: 0.5;
+
+//dots
+
+$dot-width: 10px;
+$dot-height: 10px;
+$dot-rounded: 50%;
+$dot-margin: 5px 5px;
+$dot-background: $color-gray;
+$dot-background-active: $color-base;
+
+.owl-theme {
+    .owl-dots {
+        margin-top: 20px;
+        text-align: center;
+        -webkit-tap-highlight-color: transparent;
+
+        .owl-dot {
+            //display: inline-block;
+            zoom: 1;
+            *display: inline;
+
+            span {
+                width: $dot-width;
+                height: $dot-height;
+                margin: $dot-margin;
+                background: $dot-background;
+                display: block;
+                -webkit-backface-visibility: visible;
+                transition: opacity 200ms ease;
+                border-radius: $dot-rounded;
+            }
+
+            &.active,
+            &:hover {
+                span {
+                    border: 1px solid #c9a52f;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
